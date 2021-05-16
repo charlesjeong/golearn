@@ -1,10 +1,5 @@
 package main
 
-import (
-	"fmt"
-	"unsafe"
-)
-
 type Padding struct {
 	A string
 	B int
@@ -13,5 +8,5 @@ type Padding struct {
 
 func main() {
 	a := Padding{}
-	fmt.Println(unsafe.Sizeof(a))
+	// fmt.Println(unsafe.Sizeof(a))
 }
