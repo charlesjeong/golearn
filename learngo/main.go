@@ -2,11 +2,16 @@ package main
 
 import (
 	"fmt"
-	"src/github.com/charlesjeong/learngo/bank"
+	"unsafe"
 )
 
+type Padding struct {
+	A string
+	B int
+	C float64
+}
+
 func main() {
-	fmt.Println("helloworld")
-	account := bank.MakeAccount("june")
-	fmt.Println(account)
+	a := Padding{}
+	fmt.Println(unsafe.Sizeof(a))
 }
