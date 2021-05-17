@@ -14,4 +14,5 @@ type Padding struct {
 func main() {
 	a := Padding{}
 	fmt.Println(unsafe.Sizeof(a))
+	//회사테스트
 }
