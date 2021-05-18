@@ -2,17 +2,15 @@ package main
 
 import (
 	"fmt"
-	"unsafe"
 )
 
-type Padding struct {
-	A string
-	B int
-	C float64
-}
 
 func main() {
-	a := Padding{}
-	fmt.Println(unsafe.Sizeof(a))
+	str:="hello월드"
+	runes := []rune (str)
+
+	for i:=0; i<len(runes);i++ {
+		fmt.Printf("type:%T string:%c\n",runes[i],runes[i])
+	}
 	//회사테스트
 }
