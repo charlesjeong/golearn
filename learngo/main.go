@@ -2,15 +2,13 @@ package main
 
 import (
 	"fmt"
+
+	"github.com/guptarohit/asciigraph"
 )
 
 
 func main() {
-	str:="hello월드"
-	runes := []rune (str)
-
-	for i:=0; i<len(runes);i++ {
-		fmt.Printf("type:%T string:%c\n",runes[i],runes[i])
-	}
-	//회사테스트
+	data := []float64{8.17, 8.63, 8.65, 8.92, 8.95, 9.22}
+	graph := asciigraph.Plot(data)
+	fmt.Println(graph)
 }
